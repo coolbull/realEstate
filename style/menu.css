@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+/* ========================================================================== */
+/*一级菜单样式*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;			
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+.menu_main {
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0, 0, 0, .6);
+	position: absolute;
+	bottom: 0px;
+	overflow: hidden;
+	display: block;
+	font-size: 12px;
+	z-index: 99999;
+	padding-top: 4px;
+	padding-left: 1%;
+}
+
+.menu_main li {
+	display: block;
+	float: left;
+	z-index: 99999;
+	text-align: center;
+}
+
+.menu_main li span {
+	display: block;
+	height:10px;
+	line-height:10px;
+	margin: 4px auto 0 auto;
+	text-align: center;
+	font-size: 8px;
+	z-index: 99999;
+}
+
+.menu_main li i {
+	background: url(../img/menu.png) no-repeat;	
+	background-size: 224px 56px;
+	/*横竖坐标为png宽高的一半*/
+	width: 30px;
+	height: 26px;
+	display: block;
+	margin: 0 auto;
+	/* transform: scale(1.2); */
+	z-index: 99999;
+}
+
+/* 可选菜单：全景鸟瞰 */
+.menu_main .action span{
+	color: #ee9923;
+}
+.menu_main .quanjingniaokan i {
+	background-position: -32px 0px;
+}
+.menu_main .quanjingniaokan.action i {
+	background-position: -32px -28px;
+}
+/* 可选菜单：三维沙盘 */
+.menu_main .sanweishapan i {
+	background-position: -32px -52px;
+}
+.menu_main .sanweishapan.action i {
+	background-position: -32px -20px;
+}
+/* 可选菜单：区位沙盘 */
+.menu_main .quweishapan i {
+	background-position: -64px -52px;
+}
+.menu_main .quweishapan.action i {
+	background-position: -64px -20px;
+}
+/* 可选菜单：组团沙盘 */
+.menu_main .zutuanshapan i {
+	background-position: -96px -52px;
+}
+.menu_main .zutuanshapan.action i {
+	background-position: -96px -20px;
+}
+/* 可选菜单：项目沙盘 */
+.menu_main .xiangmushapan i {
+	background-position: -128px -52px;
+}
+.menu_main .xiangmushapan.action i {
+	background-position: -128px -20px;
+}
+/* 可选菜单：园林漫游 */
+.menu_main .yuanlinmanyou i {
+	background-position: -160px -52px;
+}
+.menu_main .yuanlinmanyou.action i {
+	background-position: -160px -20px;
+}
+/* 可选菜单：实景园林 */
+.menu_main .shijingyuanlin i {
+	background-position: -192px -52px;
+}
+.menu_main .shijingyuanlin.action i {
+	background-position: -192px -20px;
+}
+/* 可选菜单：虚拟园林 */
+.menu_main .xuniyuanlin i {
+	background-position: -224px -52px;
+}
+.menu_main .xuniyuanlin.action i {
+	background-position: -224px -20px;
+}
+/* 可选菜单：样板间 */
+.menu_main .yangbanjian i {
+	background-position: -96px 0px;
+}
+.menu_main .yangbanjian.action i {
+	background-position: -96px -28px;
+}
+/* 可选菜单：虚拟样板间 */
+.menu_main .xuniyangbanjian i {
+	background-position: -288px -52px;
+}
+.menu_main .xuniyangbanjian.action i {
+	background-position: -288px -20px;
+}
+/* 可选菜单：实景样板间 */
+.menu_main .shijingyangbanjian i {
+	background-position: -320px -52px;
+}
+.menu_main .shijingyangbanjian.action i {
+	background-position: -320px -20px;
+}
+/* 可选菜单：航拍 */
+.menu_main .hangpai i {
+	background-position: -352px -52px;
+}
+.menu_main .hangpai.action i {
+	background-position: -352px -20px;
+}
+/* 可选菜单：户型鉴赏 */
+.menu_main .huxingjianshang i {
+	background-position: -128px 0;
+}
+.menu_main .huxingjianshang.action i {
+	background-position: -128px -28px;
+}
+/* 可选菜单：首页 */
+.menu_main .shouye i {
+	background-position: -416px -52px;
+}
+.menu_main .shouye.action i {
+	background-position: -416px -20px;
+}
+/* 可选菜单：电子楼书 */
+.menu_main .dianziloushu i {
+	background-position: 0 0;
+}
+.menu_main .dianziloushu.action i {
+	background-position: 0 -28px;
+}
+/* 可选菜单：区位优势 */
+.menu_main .quweiyoushi i {
+	background-position: -64px 0;
+}
+.menu_main .quweiyoushi.action i {
+	background-position: -64px -28px;
+}
+/* 可选菜单：地图导航 */
+.menu_main .ditudaohang i {
+	background-position: -512px -52px;
+}
+.menu_main .ditudaohang.action i {
+	background-position: -512px -20px;
+}
+/* 可选菜单：辅助工具 */
+.menu_main .fuzhugongju i {
+	background-position: -192px 0;
+}
+.menu_main .fuzhugongju.action i {
+	background-position: -192px -28px;
+}
+/* 可选菜单：轴侧鉴赏 */
+.menu_main .zhoucejianshang i {
+	background-position: -160px 0;
+}
+.menu_main .zhoucejianshang.action i {
+	background-position: -160px -28px;
+}
+/* 可选菜单：单体沙盘 */
+.menu_main .dantishapan i {
+	background-position: -608px -52px;
+}
+.menu_main .dantishapan.action i {
+	background-position: -608px -20px;
+}
+/* 可选菜单：视频鉴赏 */
+.menu_main .shipinjianshang i {
+	background-position: -640px -52px;
+}
+.menu_main .shipinjianshang.action i {
+	background-position: -640px -20px;
+}
+/* 可选菜单：项目介绍 */
+.menu_main .xiangmujieshao i {
+	background-position: -672px -52px;
+}
+.menu_main .xiangmujieshao.action i {
+	background-position: -672px -20px;
+}
+/* 可选菜单：saas */
+.menu_main .saas i {
+	background-position: -704px -52px;
+}
+.menu_main .saas.action i {
+	background-position: -704px -20px;
+}
+/* 可选菜单：外部配套 */
+.menu_main .waibupeitao i {
+	background-position: -736px -52px;
+}
+.menu_main .waibupeitao.action i {
+	background-position: -736px -20px;
+}
+/* 可选菜单：内部配套 */
+.menu_main .neibupeitao i {
+	background-position: -768px -52px;
+}
+.menu_main .neibupeitao.action i {
+	background-position: -768px -20px;
+}
+/* 可选菜单：房贷计算 */
+.menu_main .fangdaijisuan i {
+	background-position: -800px -52px;
+}
+.menu_main .fangdaijisuan.action i {
+	background-position: -800px -20px;
+}
+/* 可选菜单：一键拨号 */
+.menu_main .yijianbohao i {
+	background-position: -832px -52px;
+}
+.menu_main .yijianbohao.action i {
+	background-position: -832px -20px;
+}
+
+
+
+/*二级菜单样式*/
+.menu_second {
+	display: none;
+	position: absolute;
+	width: 20%;
+	right: 0%;
+	bottom: 60px;
+	z-index: 99999;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 99999;
+}
+
+.menu_second a {
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #fff;
+	font-size: 10px;
+	font-family: "PingFang SC";
+	font-weight: 400;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	z-index: 99999;
+}
+.ms_yangbanjian{
+	right: 50%;
+	transform: translateX(50%);
+	-webkit-transform: translateX(50%);
+	-moz-transform: translateX(50%);
+}
+.ms_zhoucejianshang{
+	right: 14%;
+}
+.ms_hxjs{
+	right: 26%;
+}
+.ms_qwys{
+	right: 54%;
+}
+.ms_fuzhugongju{
+	right: 0%;
+}

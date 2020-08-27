@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>花样年·花郡</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<link rel="stylesheet" href="style/style.css" />
+		<link rel="stylesheet" href="style/menu.css" />
+		<link rel="stylesheet" href="style/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="style/zhouce.css">
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+			
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			.logo{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 9;
+				background:url(img/qwys_06.png) no-repeat center top;
+				background-size: cover;
+			}
+			.swiper-container {
+				width: 100%;
+				height: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				background: url(img/qwys_01.jpg) no-repeat center top;
+				background-size: cover;
+				
+			}
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			.swiper-slide:nth-child(1){
+				background: url(img/qwys_01.png) no-repeat center top;
+				background-size: cover;
+			}
+			.swiper-slide:nth-child(2){
+				background: url(img/qwys_02.png) no-repeat center top;
+				background-size: cover;
+			}
+			.swiper-slide:nth-child(3){
+				background: url(img/qwys_03.png) no-repeat center top;
+				background-size: cover;
+			}
+			.swiper-slide:nth-child(4){
+				background: url(img/qwys_04.png) no-repeat center top;
+				background-size: cover;
+			}
+			.swiper-slide:nth-child(5){
+				background: url(img/qwys_05.png) no-repeat center top;
+				background-size: cover;
+			}
+			.swiper-container-vertical>.swiper-pagination-bullets{
+				top: 34%;
+			}
+			.swiper-pagination span{
+				width:80px;
+				height: 25px;
+				background:url("img/qwys_btn.png") no-repeat left top;
+				border-radius: 0;
+				background-size:cover;
+				outline: none;
+				opacity: 1;
+			}
+			.swiper-pagination span.swiper-pagination-bullet-active{
+				background:url("img/qwys_btn_a.png") no-repeat left top ;
+				background-size:cover;
+			}
+			.swiper-pagination span:nth-child(2){
+				background-position-y: -52px;
+			}
+			.swiper-pagination span:nth-child(3){
+				background-position-y: -103px;
+			}
+			.swiper-pagination span:nth-child(4){
+				background-position-y: -155px;
+			}
+			.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
+				margin: 1rem 0;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"></div>
+	            <div class="swiper-slide"></div>
+	            <div class="swiper-slide"></div>
+	            <div class="swiper-slide"></div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <div class="logo"></div>
+	    </div>
+		<!--menu begin-->
+		<div class="menu_second ms_fuzhugongju">
+			<a class="fuzhugongju_a" href="Javascript:void(0);">一键导航</a>
+		</div>
+		<div class="menu_second ms_qwys">
+			<a class="qwys_b" href="qwys.php">区位优势</a>
+			<a class="qwys_a" href="yggh.php">牙谷规划</a>
+		</div>
+		<div class="menu_second ms_yangbanjian">
+			<a class="yangbanjian_f" href="ybj_a3.php">A3户型</a>
+		</div>
+		<div class="menu_second ms_hxjs">			
+			<a class="ms_hxjs_b2" href="hxjs_a3.php">A3户型</a>
+			<a class="ms_hxjs_b1" href="hxjs_a2.php">A2户型</a>
+			<a class="ms_hxjs_a1" href="hxjs_a1.php">A1户型</a>
+		</div>
+		
+		<ul class="menu_main">
+			<li class="dianziloushu" style="width: 14%;">
+				<a href="dzls.php">
+				<i></i>
+				<span>电子楼书</span>
+				</a>
+			</li>
+			<li class="quanjingniaokan" style="width: 14%;">
+				<a href="qjnk.php">
+				<i></i>
+				<span>全景鸟瞰</span>
+				</a>
+			</li>
+			<li class="quweiyoushi action" style="width: 14%;">				
+				<i></i>
+				<span>区位优势</span>				
+			</li>
+			<li class="yangbanjian" style="width: 14%;">
+				<i></i>
+				<span>体验间</span>
+			</li>
+			<li class="huxingjianshang" style="width: 14%;">
+				<i></i>
+				<span>户型鉴赏</span>
+			</li>
+			<li class="zhoucejianshang" style="width: 14%;">
+				<a href="yljg.php">
+				<i></i>
+				<span>园林景观</span>
+				</a>
+			</li>
+			<li class="fuzhugongju" style="width: 14%;">
+				<i></i>
+				<span>辅助工具</span>
+			</li>
+		</ul>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
+		<script src="js/zhouce.js"></script>
+		<script type="text/javascript" src="js/menu.js" ></script>
+		<script>	
+			var swiper = new Swiper('.swiper-container', {
+		        direction: 'vertical',
+		        slidesPerView: 1,
+		        spaceBetween: 0,
+		        mousewheel: true,
+		        pagination: {
+		          el: '.swiper-pagination',
+		          clickable: true,
+		        }, 
+			
+		    });
+		    
+		    
+		    $(".quweiyoushi").click(function() {
+				if($(".ms_qwys").is(':visible')){
+					$(".ms_qwys").hide()
+				}else{
+					$(".ms_qwys").show().siblings(".menu_second").hide();
+				}
+				event.stopPropagation();//阻止事件向上冒泡
+			});
+		    $(".yangbanjian").click(function() {
+				if($(".ms_yangbanjian").is(':visible')){
+					$(".ms_yangbanjian").hide()
+				}else{
+					$(".ms_yangbanjian").show().siblings(".menu_second").hide();
+				}
+				event.stopPropagation();//阻止事件向上冒泡
+			});
+			$(".huxingjianshang").click(function() {
+				if($(".ms_hxjs").is(':visible')){
+					$(".ms_hxjs").hide()
+				}else{
+					$(".ms_hxjs").show().siblings(".menu_second").hide();
+				}		
+				event.stopPropagation();//阻止事件向上冒泡
+			});
+			
+			
+			$(".fuzhugongju").click(function() {
+				if($(".ms_fuzhugongju").is(':visible')){
+					$(".ms_fuzhugongju").hide()
+				}else{
+					$(".ms_fuzhugongju").show().siblings(".menu_second").hide();
+				}
+				event.stopPropagation();//阻止事件向上冒泡
+			});
+		
+			$(".fuzhugongju_a").click(function() {
+				gotoNewPage('//apis.map.qq.com/uri/v1/routeplan?type=drive&from=&fromcoord=&to=花样年·花郡&tocoord=30.081795,104.614155&policy=0&referer=myapp')
+			});
+	
+		</script>
+
+		<!--menu end-->
+		
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+ wx.config({
+    debug: false,
+    appId: 'wxe69c23b9444a2389',
+    timestamp: '1598403657',
+    nonceStr: 'mjdjQL1MwVWV0mpC',
+    signature: 'cbf3df7ff5cceae724b6b6732d65748700d41c3e',
+    jsApiList:['onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','onMenuShareQZone']
+  });
+  var wxData = {
+      'imgUrl': 'http://ver.a.huaerbaby.com/front/code/vr11/img/logo.jpg',
+      'link': window.location.href,
+      'desc' : '这一次，让世界赞美资阳',
+      'title' : '花样年·花郡'
+  };
+  var weixin = function (title,link,imgurl,desc){
+      wx.ready(function () {
+          wx.onMenuShareTimeline({
+              title: title,
+              link: link,
+              imgUrl: imgurl
+          });
+          wx.onMenuShareAppMessage({
+              title: title,
+              desc: desc,
+              link: link,
+              imgUrl: imgurl
+          });
+          wx.onMenuShareQQ({
+              title: title,
+              desc: desc,
+              link: link,
+              imgUrl: imgurl
+          });
+          wx.onMenuShareWeibo({
+              title: title,
+              desc: desc,
+              link: link,
+              imgUrl: imgurl
+          });
+          wx.onMenuShareQZone({
+              title: title,
+              desc: desc,
+              link: link,
+              imgUrl: imgurl
+          });
+        wx.checkJsApi({
+            jsApiList: [
+                'getNetworkType',
+                'previewImage'
+            ],
+            success: function (res) {
+               // alert(JSON.stringify(res));
+            }
+        });
+      var shareObj = {
+      'imgUrl': 'http://ver.a.huaerbaby.com/front/code/vr11/img/logo.jpg',
+      'link': window.location.href,
+      'desc' : '这一次，让世界赞美资阳',
+      'title' : '花样年·花郡',
+            success: function (res) {
+                //alert('分享成功');
+            },
+            cancel: function (res) {
+               // alert('已取消分享');
+            }
+        };
+        wx.onMenuShareAppMessage(shareObj);
+        wx.onMenuShareTimeline(shareObj);
+		
+
+
+      });
+  };
+
+  weixin(wxData.title,wxData.link,wxData.imgUrl,wxData.desc);  
+</script>
+</html>
+	</body>
+</html>

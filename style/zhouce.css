@@ -1,0 +1,135 @@
+
+
+.zc_content {
+    background:url(../img/hx_bg.jpg) no-repeat center bottom #f4eed6;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow:hidden;
+}
+.hx_logo{
+	max-width: 100%;
+	display: block;
+	margin-top: 2rem;
+}
+.hx_title{
+	max-width: 100%;
+	display: block;
+	position: absolute;
+	bottom: 18%;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+}
+.zc_content.show {
+    display: block;
+}
+
+.zc_content.hide {
+    display: none;
+}
+
+.zc_axisslide {
+    /* background: #000; */
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    top: 0;
+    left: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.zc_axisslide.show {
+    display: block;
+}
+
+.zc_axisslide.hide {
+    display: none;
+}
+
+/* @可选属性 水平居中 */
+.zc_centerH {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* @可选属性 垂直居中 */
+.zc_centerV {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.zc_axisslide ol {
+    display: none;
+    list-style-type: none;
+}
+
+.zc_axisslide img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.zc_axisslide img.show {
+    visibility: visible;
+    width: 100%;
+}
+
+.zc_axisslide img.hide {
+    visibility: hidden;
+    width: 0;
+}
+
+.zc_axisslide em.loading {
+    width: 55px;
+    padding: 40px 0 0 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -27px 0 0 -27px;
+    background: url(../img/loading.gif) no-repeat 10px 0;
+    z-index: 999999;
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+    font-family: Arial;
+    font-style: normal;
+}
+.zc_axisslide em.loading p{
+	color: #000;
+	font-size: 1rem;
+}
+.zc_axisslide .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90px;
+    height: 90px;
+    margin-left: -45px;
+    margin-top: -50px;
+    display: none;
+}
+
+.zc_axisslide .loading span {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #333;
+    font-size: 12px;
+    font-family: Arial, Verdana, sans;
+    text-align: center;
+    line-height: 1em;
+    margin-top: -0.5em;
+}
